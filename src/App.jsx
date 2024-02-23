@@ -6,14 +6,20 @@ import "./App.css";
 function App() {
   let [value, changeValue] = useState(12);
   const addValue = () => {
-    value = value + 1;
-    if (value > 20) return;
-    changeValue(value);
+    // value = value + 1;
+    if (value > 16) return;
+    changeValue((counter) => counter + 1);
+    changeValue((counter) => counter + 1);
+    changeValue((counter) => counter + 1);
+    changeValue((counter) => counter + 1);
   };
   const removeValue = () => {
-    value = value - 1;
-    if (value < 0) return;
-    changeValue(value);
+    // value = value - 1;
+    if (value < 4) return;
+    changeValue((counter) => counter - 1);
+    changeValue((counter) => counter - 1);
+    changeValue((counter) => counter - 1);
+    changeValue((counter) => counter - 1);
   };
   return (
     <>
